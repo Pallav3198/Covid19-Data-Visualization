@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Covid-19 Cases</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     
+    <script src="script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-3">Covid-19 Data Visualization</h1> 
+        <br></br>
+        <h5 id ="title"><b>Total Cases Nationally</b></h5>
+        <table class="table"> 
+            <thead>
+              <tr> 
+                <th class="text-info">Total Cases</th>
+                <th class="text-danger">Total Deaths</th>
+                <th class="text-success">Total Recovered</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="national_data">
+                
+              </tr>      
+            </tbody>
+            <tbody> 
+               <tr id="global_data">
+                  
+               </tr>  
+            </tbody>
+          </table> 
+          <br>
+          <div class="btn btn-danger btn-block" id="refresh">Refresh Data</div> 
+          <br>
+          <h5 id ="title"><b>Total Cases State-wise</b></h5>
+          <canvas id="myChart">
+
+          </canvas>  
+          <div class="footer">
+         <p>Designed and Developed by-Pallav Kumar | &#xa9 2020 </p>
+        </div>
+          
+    </div>
+</body>
+</html>
